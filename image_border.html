@@ -1,0 +1,42 @@
+<!-- Add 3 images, apply with 100px & height 100px to it, apply 4 different border style to all 4 sides of the image. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Image Borders</title>
+	<style>
+		.image-container
+		{
+			display: inline-block;
+			margin: 10px;
+		}
+
+		img
+		{
+			width: 300px;
+			height: 300px;
+			border-top: 2px solid red;
+			border-right: 4px dotted green;
+			border-bottom: 6px dashed blue;
+			border-left: 8px double orange;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="image-container">
+		<img src="image/img1.jpg" alt="Image 1">
+	</div>
+
+	<div class="image-container">
+		<img src="image/img2.jpg" alt="Image 2">
+	</div>
+
+	<div class="image-container">
+		<img src="image/img3.jpg" alt="Image 3">
+	</div>
+
+</body>
+</html>

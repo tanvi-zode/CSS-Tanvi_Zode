@@ -1,0 +1,48 @@
+<!-- Add marquee with important message of your choice running from right to left on web page, give animation to it of 1 second running infinite times showing marquee text in red & orange color. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marquee with Important Message</title>
+<style>
+    .marquee {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        box-sizing: border-box;
+        animation: marqueeAnimation 1s linear infinite;
+    }
+
+    @keyframes marqueeAnimation {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    .marquee span {
+        display: inline-block;
+        padding-right: 100%;
+        animation: colorChange 2s infinite alternate;
+    }
+
+    @keyframes colorChange {
+        0% {
+            color: red;
+        }
+        100% {
+            color: orange;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="marquee">
+        <span>This is an important message!</span>
+    </div>
+</body>
+</html>

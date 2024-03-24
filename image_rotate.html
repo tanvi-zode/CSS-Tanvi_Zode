@@ -1,0 +1,40 @@
+<!-- Add 3 image in 1st row apply rotate 15 degree effect to it on mouse hover to all the images. Also add transition for smooth effect. Add 3 image in 2nd row, apply scale 1.2 effect to it on mouse hover to allthe images. A;so add transition for smooth effect. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Hover Effects</title>
+  <style>
+    .image-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.image-row img {
+  width: 30%;
+  height: auto;
+  margin: 0 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-row img:hover {
+  transform: rotate(15deg);
+}
+
+.image-row:nth-child(2) img:hover {
+  transform: scale(1.2);
+}
+  </style>
+<body>
+
+  <div class="image-row">
+    <img src="image/img1.jpg" alt="Image 1">
+    <img src="image/img2.jpg" alt="Image 2">
+    <img src="image/img3.jpg" alt="Image 3">
+  </div>
+ 
+</body>
+</html>

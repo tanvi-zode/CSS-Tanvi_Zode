@@ -1,0 +1,67 @@
+<!-- Using CSS and HTML make a webpage that has two columns. Each columns should use half of the width of the page. The left half should have gray background and the right half should have a light green background. The left half should have a list of the 5 bestselling books in Amazon's kindle store, and the right should have a list of your five favorite celebrities or athletes.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Two Columns</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    .container {
+        display: flex;
+    }
+    
+    .column {
+        width: 50%;
+        padding: 20px;
+    }
+    
+    .left-column {
+        background-color: lightgray;
+    }
+    
+    .right-column {
+        background-color: lightgreen;
+    }
+    
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    li {
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="column left-column">
+        <h2>Bestselling Books on Kindle Store</h2>
+        <ul>
+            <li>The Midnight Library by Matt Haig</li>
+            <li>Atomic Habits by James Clear</li>
+            <li>Where the Crawdads Sing by Delia Owens</li>
+            <li>The Four Winds by Kristin Hannah</li>
+            <li>The Sanatorium by Sarah Pearse</li>
+        </ul>
+    </div>
+    <div class="column right-column">
+        <h2>Favorite Celebrities/Athletes</h2>
+        <ul>
+            <li>LeBron James</li>
+            <li>Rihanna</li>
+            <li>Lionel Messi</li>
+            <li>Emma Watson</li>
+            <li>Keanu Reeves</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
